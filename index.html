@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopuwatchu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1><em>Stopuwatchu</em></h1>
+        <div class="container">
+            <div id="time" class="stopwatch">
+                00:00:00:00
+            </div>
+            <div id="control" class="button">
+                <button id="play" class="play" onclick="play()">
+                    <img src="images/play.png" alt="play.jpg">
+                </button>
+                <button id="pause" class="pause" onclick="pause()">
+                    <img src="images/pause.png" alt="pause.jpg">
+                </button>
+                <button id="lapBtn" class="lapBtn" onclick="lapping()">
+                    <img src="images/lap.png" alt="lap.jpg">
+                </button>
+                <button id="reset" class="reset" onclick="reset()">
+                    <img src="images/reset.png" alt="reset.jpg">
+                </button>
+            </div>
+        </div>
+        <ul id="lap" class="lap">
+            <!-- <li id="lap-item" class="lap-item">
+                <h3 id="number">#1</h3>
+                <h3 id="lapped">00:00:00:00</h3>
+                <h3 id="elapsed">00:00:00:00</h3>
+            </li> -->
+        </ul>
+    </div>
+
+    <script src="stopwatch.js"></script>
+</body>
+</html>
